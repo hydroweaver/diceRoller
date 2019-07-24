@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val rollButton: Button = findViewById(R.id.roll_button)
+
         rollButton.setOnClickListener { rollDice() }
         diceImage = findViewById(R.id.dice_image)
     }
@@ -31,5 +32,10 @@ class MainActivity : AppCompatActivity() {
             else -> R.drawable.dice_6
         }
         diceImage.setImageResource(drawableResource)
+
+        if(randomInt == 6){
+            val text_change:TextView = findViewById(R.id.text2)
+            text_change.text = "GOLU GOLU"
+        }
     }
 }

@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">My Dice Roller</string>
     <string name="roll_label">Roll</string>
+    <string name="text_for_chotu">CHOTU WANTS THIS CHANGED</string>
 </resources>
